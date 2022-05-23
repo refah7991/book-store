@@ -10,7 +10,7 @@ module.exports = {
 
     output: {
         path: path.join(__dirname, "/dist"),
-        publicPath: 'something',
+        publicPath: '',
         filename: "main.js",
     },
 
@@ -26,19 +26,19 @@ module.exports = {
                 test: require.resolve("jquery"),
                 loader: "expose-loader",
                 options: {
-                    exposes: ["$", "jQuery"],
+                    exposes: [{ globalName: "$", override: true }, { globalName: "jQuery", override: true }], // يجب تعديل هذ االسطر
                 },
-            },
-
-            {
+            }, {
                 test: /\.css$/,
                 use: [
                     "style-loader",
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
+                            publicPath: '../',
                             esModule: false,
                         },
+
                     },
                     "css-loader",
                 ],
@@ -52,6 +52,17 @@ module.exports = {
                     }
                 }]
             },
+            {
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                use: [{
+                    loader: "file-loader",
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: "fonts",
+                        esModule: false,
+                    }
+                }]
+            },
 
             {
                 test: /\.html$/,
@@ -59,8 +70,15 @@ module.exports = {
                     loader: "html-loader",
                     options: {
                         minimize: true,
-                    },
+                    }
                 }, ],
+            },
+            {
+                test: require.resolve("jquery"),
+                loader: "expose-loader",
+                options: {
+                    exposes: ["$", "jQuery"],
+                },
             },
         ],
     },

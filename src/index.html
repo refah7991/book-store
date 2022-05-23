@@ -6,26 +6,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>متجر الكتب</title>
-
+    <script type="text/html " src="{require(js/index.js)} "></script>
 </head>
 
 <body>
-    <div class="container-fuild">
+    <div class="container-fluid">
         <div class="row">
-            <div class="navbar">
-                <div class="navbar-header">
-                    <div class="container">
-                        <div class=" navbar-header ">
-                            <a href=". " class="navbar-brand ">
-                                <img src="./img/read.jpg " alt="متجر الكتب " width="90" height="90">
-                            </a>
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container">
+                    <div class=" navbar-header ">
+                        <a href=". " class="navbar-brand ">
+                            <img src="./img/logorefa.jpg " alt="متجر الكتب " width="90" height="90">
+                        </a>
+                    </div>
+                    <form class="form-inline">
+                        <input type="email" class="form-control custom-form-control" placeholder="..ابحث">
+                        <div class="dropdown categories">
+                            <a href="#" class="nav-link dropdown-toggle custom-btn" role="button" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">اختر الفئة</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <div class="chekbox">
+                                        <label>
+                                              <input type="checkbox" name="name-book" value="رواية">تطوير الذات
+                                            </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chekbox">
+                                        <label>
+                                              <input type="checkbox" class="name-book" > رواية
+                                            </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chekbox">
+                                        <label>
+                                              <input type="checkbox" class="name-book" >سيرة ذاتية
+                                            </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn search-btn"> ابحث</button>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">رواية</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"> والأدب التاريخ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">تطوير الذات</a>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="search.html" class="nav-link">البحث المتقدم</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">تواصل معنا</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="عربة الشراء" data-toggle="tooltip" data-placement="bottom"> <i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--منتجات المميزة-->
+    <div class="row">
+        <div class="col-12">
+            <!-- pic move-->
+            <div id="carousel-featured" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 offest-2 product">
+                                    <img src="./img/11.jpg " alt=" ">
+                                </div>
+                                <div class="col-5">
+                                    <div class="product-details">
+                                        <div class="sale large">خصم 50%</div>
+                                        <div class="product-category">خصومات
+                                        </div>
+                                        <h1> الحب في زمن الكوليرا</h1>
+                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 product">
+                                    <img src="./img/44.jpg " alt=" ">
+                                </div>
+                                <div class="col-5">
+                                    <div class="product-details">
+                                        <div class="product-category">خصومات
+                                        </div>
+                                        <h2>حديث المساء </h2>
+                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 product">
+                                    <img src="./img/222.jpg " alt=" ">
+                                </div>
+                                <div class="col-5">
+                                    <div class="product-details">
+                                        <div class="sale large">خصم 50%</div>
+                                        <div class="product-category">خصومات
+                                        </div>
+                                        <h2> مادونا </h2>
+                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 product">
+                                    <img src="./img/33.jpg " alt=" ">
+                                </div>
+                                <div class="col-5">
+                                    <div class="product-details">
+                                        <div class="product-category">خصومات
+                                        </div>
+                                        <h2> أولاد حارتنا</h2>
+                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- pic small-->
+                <div class="carousel-indicators carousel-Indicators custom-carousel-indicator-primary">
+
+                    <img src="./img/11.jpg " data-target="#carousel-featured " data-slide-to="0 " class="active ">
+                    <img src="./img/44.jpg " data-target="#carousel-featured " data-slide-to="1 ">
+                    <img src="./img/222.jpg " data-target="#carousel-featured " data-slide-to="2 ">
+                    <img src="./img/33.jpg " data-target="#carousel-featured " data-slide-to="3 ">
+                </div>
+                <!--end pic small-->
+                <!--سهمي التنقل-->
+                <a href="#carousel-featured" class="carousel-control-prev" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-right fa-2x"></i>
+                </a>
+                <a href="#carousel-featured" class="carousel-control-next" role="button" data-slide="next">
+                    <i class="fa fa-chevron-left fa-2x"></i>
+                </a>
+                <!--منتجات المميزة-->
             </div>
         </div>
-    </div>
 </body>
-<script type="text/html " src="{require(j.s/index.js)} "></script>
+
 
 </html>
