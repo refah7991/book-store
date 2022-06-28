@@ -14,16 +14,21 @@
         <div class="row">
             <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container">
-                    <div class=" navbar-header ">
-                        <a href=". " class="navbar-brand ">
-                            <img src="./img/logorefa.jpg " alt="متجر الكتب " width="90" height="90">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse" data-target="#navbar-collapsed-menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <li href="./checkout.html" class="navbar-toggler btn btn-icon">
+                            <i class="fas fa-shopping-cart"></i></li>
+                        <a href=". " class="navbar-brand float-right">
+                            <img src="./img/logorefa.jpg" alt="متجر الكتب" width="90" height="90" class="rounded float-right">
                         </a>
                     </div>
                     <form class="form-inline">
-                        <input type="email" class="form-control custom-form-control" placeholder="..ابحث">
+                        <input type="email" class="form-control custom-form-control" placeholder="..ابحث ">
                         <div class="dropdown categories">
-                            <a href="#" class="nav-link dropdown-toggle custom-btn" role="button" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">اختر الفئة</a>
-                            <ul class="dropdown-menu custom-dropdown-menu">
+                            <a href="# " class="nav-link dropdown-toggle custom-btn" role="button" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">اختر الفئة</a>
+                            <ul class="dropdown-menu custom-dropdown-menu ">
                                 <li>
                                     <div class="chekbox">
                                         <label>
@@ -49,37 +54,41 @@
                         </div>
                         <button type="submit" class="btn search-btn"> ابحث</button>
                     </form>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">الصفحة الرئيسية</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
-                            <ul class="dropdown-menu custom-dropdown-menu">
-                                <li>
-                                    <a href="#" class="dropdown-item">رواية</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item"> والأدب التاريخ</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">تطوير الذات</a>
-                                </li>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="# " class="nav-link">الصفحة الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href=" " class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">رواية</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"> والأدب التاريخ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">تطوير الذات</a>
+                                    </li>
 
 
 
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="search.html" class="nav-link">البحث المتقدم</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">تواصل معنا</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="عربة الشراء" data-toggle="tooltip" data-placement="bottom"> <i class="fas fa-shopping-cart"></i></a>
-                        </li>
-                    </ul>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">تواصل معنا</a>
+                            </li>
+
+                            <li class="d-none d-lg-block">
+                                <a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="عربة الشراء" data-toggle="tooltip" data-placement="bottom"> <i class="fas fa-shopping-cart"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -95,16 +104,16 @@
                     <div class="carousel-item active">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4 offest-2 product">
-                                    <img src="./img/11.jpg " alt=" ">
+                                <div class="col-4 offest-lg-2 product">
+                                    <img src="./img/11.jpg" alt=" ">
                                 </div>
                                 <div class="col-5">
                                     <div class="product-details">
                                         <div class="sale large">خصم 50%</div>
                                         <div class="product-category">خصومات
                                         </div>
-                                        <h1> الحب في زمن الكوليرا</h1>
-                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                        <h2>الحب في زمن الكوليرا</h2>
+                                        <a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">تسوق الان</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,15 +122,15 @@
                     <div class="carousel-item">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4 product">
-                                    <img src="./img/44.jpg " alt=" ">
+                                <div class="col-4 offest-lg-2 product">
+                                    <img src="./img/44.jpg" alt=" ">
                                 </div>
                                 <div class="col-5">
                                     <div class="product-details">
                                         <div class="product-category">خصومات
                                         </div>
-                                        <h2>حديث المساء </h2>
-                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                        <h2>حديث المساء</h2>
+                                        <a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">تسوق الان</a>
                                     </div>
                                 </div>
                             </div>
@@ -130,8 +139,8 @@
                     <div class="carousel-item">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4 product">
-                                    <img src="./img/222.jpg " alt=" ">
+                                <div class="col-4 offest-lg-2 product">
+                                    <img src="./img/222.jpg" alt=" ">
                                 </div>
                                 <div class="col-5">
                                     <div class="product-details">
@@ -139,7 +148,7 @@
                                         <div class="product-category">خصومات
                                         </div>
                                         <h2> مادونا </h2>
-                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                        <a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">تسوق الان</a>
                                     </div>
                                 </div>
                             </div>
@@ -149,15 +158,15 @@
                     <div class="carousel-item">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4 product">
-                                    <img src="./img/33.jpg " alt=" ">
+                                <div class="col-4 offest-lg-2 product">
+                                    <img src="./img/33.jpg" alt=" ">
                                 </div>
                                 <div class="col-5">
                                     <div class="product-details">
                                         <div class="product-category">خصومات
                                         </div>
                                         <h2> أولاد حارتنا</h2>
-                                        <a href="product.html " class="btn btn-lg  custom-btn custom-btn-primary">تسوق الان</a>
+                                        <a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">تسوق الان</a>
                                     </div>
                                 </div>
                             </div>
@@ -168,23 +177,481 @@
                 <!-- pic small-->
                 <div class="carousel-indicators carousel-Indicators custom-carousel-indicator-primary">
 
-                    <img src="./img/11.jpg " data-target="#carousel-featured " data-slide-to="0 " class="active ">
-                    <img src="./img/44.jpg " data-target="#carousel-featured " data-slide-to="1 ">
-                    <img src="./img/222.jpg " data-target="#carousel-featured " data-slide-to="2 ">
-                    <img src="./img/33.jpg " data-target="#carousel-featured " data-slide-to="3 ">
+                    <img src="./img/11.jpg" data-target="#carousel-featured" data-slide-to="0" class="active">
+                    <img src="./img/44.jpg" data-target="#carousel-featured" data-slide-to="1">
+                    <img src="./img/222.jpg" data-target="#carousel-featured" data-slide-to="2">
+                    <img src="./img/33.jpg" data-target="#carousel-featured" data-slide-to="3">
                 </div>
                 <!--end pic small-->
                 <!--سهمي التنقل-->
                 <a href="#carousel-featured" class="carousel-control-prev" role="button" data-slide="prev">
-                    <i class="fa fa-chevron-right fa-2x"></i>
+                    <i class="fa fa-chevron-right fa-2x "></i>
                 </a>
                 <a href="#carousel-featured" class="carousel-control-next" role="button" data-slide="next">
                     <i class="fa fa-chevron-left fa-2x"></i>
                 </a>
-                <!--منتجات المميزة-->
+                <!--منتجات المميزة end -->
+            </div>
+            <!--store fav-->
+            <div class="container">
+                <div class="row">
+                    <div id="store-featured" class="col-12  col-md-8 offest-md-2 col-lg-6 offest-lg-3">
+                        <h3 class="text-center custom-heading">مميزات المتجر</h3>
+                        <div class="row">
+                            <div class="col-4 text-center featured">
+                                <img src="./img/electric-car.png" alt="التوصيل المجاني" width="70">
+                                <div>التوصيل مجاني </div>
+                            </div>
+                            <div class="col-4 text-center featured">
+                                <img src="./img/energy.png" alt="استبدال" width="70">
+                                <div>استبدال </div>
+                            </div>
+                            <div class="col-4 text-center featured">
+                                <img src="./img/ecological.png" alt="استرجاع" width="70">
+                                <div>تقييمات </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <!--end store fav-->
+    <!--اكثر مبيعا-->
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center custom-heading">الأكثر مبيعا</h3>
+            <div id="carousel-most-sold" class="carsousel slide" data-ride="carsousel">
+                <div class="carousel inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3">
+                                <div class="card custom-thumbnail">
+                                    <div class="overlay">
+                                        <button class="btn btn-secondry custom-btn add-to-cart-btn">إضافة للعربة
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                    <img src="./img/11.jpg" alt=" ">
+                                    <div class="card-body">
+                                        <h4>الحب في زمن الكوليرا</h4>
+                                        <div class="price float-right">
+                                            SAR 40
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button class="float-left btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">اضاف للعربة التسوق
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="card custom-thumbnail">
+                                    <div class="overlay">
+                                        <button class="btn btn-secondry custom-btn add-to-cart-btn">إضافة للعربة
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                    <img src="./img/33.jpg" alt=" ">
+                                    <div class="card-body">
+                                        <h4>أولاد حارتنا</h4>
+                                        <div class="price float-right">
+                                            SAR 39
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star "></i>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button class="float-left btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">اضاف للعربة التسوق
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="card custom-thumbnail">
+                                    <div class="overlay">
+                                        <button class="btn btn-secondry custom-btn add-to-cart-btn">إضافة للعربة
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                    <img src="./img/44.jpg" alt=" ">
+                                    <div class="card-body ">
+                                        <h4>حديث المساء</h4>
+                                        <div class="price float-right">
+                                            SAR 28
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                            <i class="fas fa-star active "></i>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button class="float-left btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">اضاف للعربة التسوق
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 d-none d-lg-block">
+                                <div class="card custom-thumbnail">
+                                    <div class="sale">50%</div>
+                                    <div class="overlay">
+                                        <button class="btn btn-secondry custom-btn add-to-cart-btn">إضافة للعربة
+                                                <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                    <img src="./img/222.jpg" alt=" ">
+                                    <div class="card-body">
+                                        <h4> صاحبة معطف الفرو</h4>
+                                        <div class="price float-right">
+                                            SAR 30
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star active "></i>
+                                            <i c lass="fas fa-star "></i>
+                                            <i c lass="fas fa-star "></i>
+                                            <i c lass="fas fa-star "></i>
+                                            <i c lass="fas fa-star "></i>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button class="float-left btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">اضاف للعربة التسوق
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item"></div>
+                        <div class="carousel-item"></div>
+                    </div>
+                </div>
+
+                <!--
+                <ol class="carousel-indicators ">
+                    <li data-toggle="#carousel-most-sold " data-slide-to="0 " class="active "></li>
+                    <li data-toggle="#carousel-most-sold " data-slide-to="1 "></li>
+                    <li data-toggle="#carousel-most-sold " data-slide-to="2 "></li>
+                </ol>-->
+            </div>
+        </div>
+    </div>
+    <!--اكثر مبيعا-->
+
+
+    <!--روايات مترجمة -->
+
+    <div id="row-novel">
+        <div class="container">
+            <h3 class="custom-heading">روايات المترجمة
+            </h3>
+            <div class="row">
+                <div class="col-12 col-md-6 novel-product">
+                    <div class="custom-panel">
+                        <div id="carousel-novel-history" class="carousel slide" data-slide="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./img/222.jpg" class="product-image" height="250">
+                                            <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                        </div>
+                                        <div class="col-lg-8 product-details">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <h4>الحب في زمن الكوليرا</h4>
+                                                </div>
+                                                <div class="price">
+                                                    35$
+                                                </div>
+                                            </div>
+                                            <p class="custom-text-muted float-right"> التي يمكن انن تقراها رواية تاريخية فلسفية تتكلم عن احد القرى الساحلية من اجمل الروايات</p>
+                                            <div class="rating float-right">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                            </div>
+                                            <div class="col-6 d-lg-none float-left">
+                                                <a href="product.html" class="btn  custom-btn-primary btn-block"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"></div>
+                            </div>
+                            <div class="novel-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="novel-text">الرواية
+                                        </div>
+
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="prev">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="next">
+                                        <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 novel-product">
+                    <div class="custom-panel">
+                        <div id="carousel-novel-history" class="carousel slide" data-slide="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./img/222.jpg" class="product-image" height="250">
+                                            <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                        </div>
+                                        <div class="col-lg-8 product-details">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <h4>أولاد حارتنا</h4>
+                                                </div>
+                                                <div class="price">
+                                                    25$
+                                                </div>
+                                            </div>
+                                            <p class="custom-text-muted float-right"> التي يمكن انن تقراها رواية تاريخية فلسفية تتكلم عن احد القرى الساحلية من اجمل الروايات</p>
+                                            <div class="rating float-right">
+                                                <i class="fas fa-star active "></i>
+                                                <i class="fas fa-star active "></i>
+                                                <i class="fas fa-star active "></i>
+                                                <i class="fas fa-star active "></i>
+                                                <i class="fas fa-star active "></i>
+                                            </div>
+                                            <div class="col-6 d-lg-none float-left">
+                                                <a href="product.html" class="btn  custom-btn-primary btn-block"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"></div>
+                            </div>
+                            <div class="novel-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="novel-text">الرواية
+
+                                        </div>
+
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="prev">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="next">
+                                        <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 novel-product">
+                    <div class="custom-panel">
+                        <div id="carousel-novel-history" class="carousel slide" data-slide="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./img/222.jpg" class="product-image" height="250">
+                                            <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                        </div>
+                                        <div class="col-lg-8 product-details">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <h4>حديث المساء</h4>
+                                                </div>
+                                                <div class="price">
+                                                    25$
+                                                </div>
+                                            </div>
+                                            <p class="custom-text-muted float-right"> التي يمكن انن تقراها رواية تاريخية فلسفية تتكلم عن احد القرى الساحلية من اجمل الروايات</p>
+                                            <div class="rating float-right">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                            </div>
+                                            <div class="col-6 d-lg-none float-left">
+                                                <a href="product.html" class="btn  custom-btn-primary btn-block"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"></div>
+                            </div>
+                            <div class="novel-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="novel-text">الرواية
+
+                                        </div>
+
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="prev">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="next">
+                                        <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 novel-product">
+                    <div class="custom-panel">
+                        <div id="carousel-novel-history" class="carousel slide" data-slide="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./img/222.jpg" class="product-image" height="250">
+                                            <a href="product.html" class="btn custom-btn custom-btn-primary btn-block">تصفح المنتج</a>
+                                        </div>
+                                        <div class="col-lg-8 product-details">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <h4>صاحبة معطف الفرو</h4>
+                                                </div>
+                                                <div class="price">
+                                                    35$
+                                                </div>
+                                            </div>
+                                            <p class="custom-text-muted float-right"> التي يمكن انن تقراها رواية تاريخية فلسفية تتكلم عن احد القرى الساحلية من اجمل الروايات</p>
+                                            <div class="rating float-right">
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i>
+                                            </div>
+                                            <div class="col-6 d-lg-none float-left">
+                                                <a href="product.html" class="btn  custom-btn-primary btn-block"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"></div>
+                            </div>
+                            <div class="novel-nav">
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <div class="novel-text">الرواية
+
+                                        </div>
+
+                                    </div>
+                                    <div class="float-left">
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="prev">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button class="btn" data-target="#carousel-novel-history" data-slide="next">
+                                        <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--روايات المترجمة-->
+
+    <!--انواع الكتب--->
+
+    <div id="footer" class="row">
+        <div id="literature" class="co-12 text-center">
+            <span>الأدب العربي</span>
+            <div class=" img-container ">
+                <img src="./img/11.jpg ">
+                <img src="./img/11.jpg ">
+                <img src="./img/11.jpg ">
+            </div>
+        </div>
+
+        <div id="footer-nav" class="col-12 text-center">
+            <div class="footer-logo">
+                <a href="./ ">
+                    <img src="./img/logorefa.jpg" height="150">
+                </a>
+            </div>
+            <div id="footer-nav-links" class="col-12 d-none d-md-block">
+                <a href=". ">الصفحة الرئيسية</a>
+                <a href="search.html">البحث</a>
+                <a href="contact.html"> التواصل معنا</a>
+            </div>
+            <div id="news-letter" class="col-md-6 offest-md-3">
+                <form>
+                    <label for="footer-email">تابع النشرة البريدية لأحدث العروض</label>
+                    <br>
+                    <div class="input-group">
+                        <input type="email" class="form-control custom-form-control" placeholder="البريد الالكتروني" name="email" required>
+                        <button type="submit" class="btn custom-btn custom-btn-primary2">المتابعة</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer-copyright-social" class="col-12">
+            <div class="container">
+                <div class="clearfix">
+                    <div id="copyright" class="float-right">
+                        جميع الحقوق محفوظة2022 للمتجر لعام
+                    </div>
+                    <div id="socail-icon" class="float-left">
+                        <a href="https://www.instagram.com/refah_2020/">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://twitter.com/home">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--انواع الكتب--->
+
 </body>
 
+
+
+</html>
 
 </html>
