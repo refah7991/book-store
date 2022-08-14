@@ -1,10 +1,15 @@
+import './scss/custom.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
+import './css/custom.css';
 import './css/style.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "jquery/dist/jquery.min";
 import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "@fortawesome/fontawesome-free/js/all.min";
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css';
+
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
@@ -96,3 +101,15 @@ $('#form-checkout input[name="pay_methode"]').change(function() {
         $('#credit-card-info').toggle();
     });
 });
+// مكون البحث عن السعر
+$("#price-range").slider({
+    range: true,
+    min: 20,
+    max: 700,
+    step: 20,
+    value: [20, 700],
+    slide: function(event, ui) {
+        $("#price-min").text(ui.values[0]);
+        $("#price-max").text(ui.values[1]);
+    }
+})

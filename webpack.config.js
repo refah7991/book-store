@@ -21,27 +21,26 @@ module.exports = {
         writeToDisk: true,
         open: true,
     },
+
     module: {
         rules: [{
                 test: require.resolve("jquery"),
                 loader: "expose-loader",
                 options: {
-                    exposes: [{ globalName: "$", override: true }, { globalName: "jQuery", override: true }], // يجب تعديل هذ االسطر
+                    exposes: [{ globalName: "$", override: true }, { globalName: "jQuery", override: true }],
+
                 },
             }, {
-                test: /\.css$/,
-                use: [
-                    "style-loader",
-                    {
+                test: /\.(sa|sc|c)ss$/,
+                use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: '../',
-                            esModule: false,
-                        },
-
+                            publicPath: '../'
+                        }
                     },
-                    "css-loader",
-                ],
+                    'css-loader',
+                    'sass-loader'
+                ]
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
@@ -100,6 +99,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "pay.html",
             template: "src/pay.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "search.html",
+            template: "src/search.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "contactus.html",
+            template: "src/contactus.html",
         }),
 
         new MiniCssExtractPlugin({ filename: "css/style.css" }),
